@@ -14,13 +14,12 @@ $color-yellow: #e8c500;
 $color-white: #fff;
 $color-default-border: 1px solid #606060;
 
-
 $font-roboto: 'Roboto Condensed', sans-serif;
 
 %axor {
   background-image: url(../assets/axor.png);
   width: 101%;
-  height: 840px;
+  height: 879px;
   background-repeat: repeat;
 }
 
@@ -57,11 +56,10 @@ $laptop-l: 1440px;
 $four-k: 2560px;
 
 @media (max-width: $four-k) {
-
 }
 
 @media (max-width: $laptop-l) {
-  .sidebar__template{
+  .sidebar__template {
     height: 859px;
     width: 230px;
   }
@@ -83,7 +81,7 @@ $four-k: 2560px;
 }
 
 @media (max-width: $laptop) {
-  *{
+  * {
     font-size: 14px;
   }
   .sidebar__template {
@@ -91,7 +89,7 @@ $four-k: 2560px;
     width: 250px;
   }
 
-  .footer__template{
+  .footer__template {
     width: 102%;
   }
 
@@ -112,13 +110,23 @@ $four-k: 2560px;
       padding: 0px;
       height: 35px;
     }
-
   }
 }
 
 @media (max-width: $tablet) {
-  *{
+  * {
     font-size: 12px;
+  }
+
+  .card-body-endress {
+    height: 321px;
+  }
+
+  %axor {
+    background-image: url(../assets/axor.png);
+    width: 102%;
+    height: 877px;
+    background-repeat: repeat;
   }
 
   .search-registry {
@@ -131,8 +139,12 @@ $four-k: 2560px;
 
   .sidebar__template {
     width: 186px;
-    height: 841px;
+    height: 879px;
     margin-top: -1px;
+  }
+
+  .card-body-photoWorker {
+    height: 422px;
   }
 
   .no-image {
@@ -196,8 +208,6 @@ $four-k: 2560px;
 }
 
 @media (max-width: $mobile-l) {
-
-
   .template-select-status {
     .side-bar__content {
       min-height: 50%;
@@ -210,7 +220,6 @@ $four-k: 2560px;
     .margin-btn__search {
       margin-top: 4px;
     }
-
   }
 
   .template-new-edit-status {
@@ -258,9 +267,7 @@ $four-k: 2560px;
 }
 
 @media (max-width: $mobile-m) {
-
 }
 
 @media (max-width: $mobile-s) {
-
 }

@@ -3,174 +3,72 @@
     <div class="card bg-light ">
       <div class="card-header">
         <i class="fa fa-camera"></i>
-        Foto do trabalhador</div>
-      <div class="card-body">
+        {{brandPhotoWorker}}</div>
+      <div class="card-body card-body-photoWorker">
         <div class="d-flex justify-content-center">
           <img class="sem-imagem" src="../../assets/sem-imagem.jpg" alt="">
         </div>
         <div class="d-flex justify-content-start mt-2">
-          <button type="button" class="btn btn-light">Anexar Foto</button>
+          <button type="button" class="btn btn-light">{{brandTitlePhoto}}</button>
         </div>
       </div>
     </div>
   </div>
+
   <div class="col-md-7">
     <div class="card bg-light ">
       <div class="card-header">
-          <i class="fa fa-id-card-o"></i>
-        Dados pessoais</div>
-      <div class="card-body">
-        <div class="row">
-          <div class="col-md-4">
-            <label class="fields">Matricula</label>
-            <input type="email" class="form-control" aria-describedby="emailHelp">
-          </div>
-          <div class="col-md-4">
-            <label class="fields">Nome</label>
-            <input type="email" class="form-control" aria-describedby="emailHelp">
-          </div>
-          <div class="col-md-4">
-            <label class="fields">N° Pis *</label>
-            <input type="email" class="form-control" aria-describedby="emailHelp">
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-4">
-            <label class="fields">CPF</label>
-            <input type="email" class="form-control" aria-describedby="emailHelp">
-          </div>
-          <div class="col-md-4">
-            <label class="fields">RG</label>
-            <input type="email" class="form-control" aria-describedby="emailHelp">
-          </div>
-          <div class="col-md-4">
-            <label class="fields">N° CTPS</label>
-            <input type="email" class="form-control" aria-describedby="emailHelp">
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-4">
-            <label class="fields">Data Nascimento</label>
-            <input type="email" class="form-control" aria-describedby="emailHelp">
-          </div>
-          <div class="col-md-4">
-            <label class="fields">Data Admissão</label>
-            <input type="email" class="form-control" aria-describedby="emailHelp">
-          </div>
-          <div class="col-md-4">
-            <label class="fields">Data Emissão</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-4">
-            <label class="fields">Pai</label>
-            <input type="email" class="form-control" aria-describedby="emailHelp">
-          </div>
-          <div class="col-md-4">
-            <label class="fields">Mãe</label>
+        <i class="fa fa-id-card-o"></i>
+        {{brandTitlePersonalData}}</div>
+      <div class="card-body card-body-personal-data">
+        <div class="row" >
+          <div class="col-md-6" *ngFor="let personal of personalData">
+            <label class="fields">{{personal.name}}</label>
             <input type="email" class="form-control" aria-describedby="emailHelp">
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
 
-<div class="row mt-3 mr-2 ml-2">
-  <div class="col-md-5 ">
-    <div class="card bg-light ">
-      <div class="card-header">
+  <div class="row mt-3 mr-2 ml-2">
+    <div class="col-md-5 ">
+      <div class="card bg-light ">
+        <div class="card-header">
           <i class="fa fa-upload"></i>
-        Enviar arquivos</div>
-      <div class="card-body">
-        <div class="row">
-          <div class="col col-sm-12 col-md-12 col-lg-12 col-xl-6">
-            <label class="fields">Exame Medico</label>
-            <button type="button" class="btn btn-light">Anexar Documento</button>
+          Enviar arquivos</div>
+        <div class="card-body ">
+          <div class="row">
+            <div *ngFor="let send of sendFiles" class="col col-sm-12 col-md-12 col-lg-12 col-xl-6">
+              <label class="fields">{{send.name}}
+                </label><br>
+              <button type="button" class="btn btn-light">{{attachDocument}}</button>
+            </div>
           </div>
-          <div class="col col-sm-12 col-md-12 col-lg-12 col-xl-6">
-            <label class="fields">Carteira de trabalho</label>
-            <button type="button" class="btn btn-light">Anexar Documento</button>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col col-sm-12 col-md-12 col-lg-12 col-xl-6">
-            <label class="fields">CNH</label><br>
-            <button type="button" class="btn btn-light">Anexar Documento</button>
-          </div>
-          <div class="col col-sm-12 col-md-12 col-lg-12 col-xl-6">
-            <label class="fields">Comprovante de endereço</label>
-            <button type="button" class="btn btn-light">Anexar Documento</button>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col col-sm-12 col-md-12 col-lg-12 col-xl-6">
-            <label class="fields">Outro documento</label>
-            <button type="button" class="btn btn-light">Anexar Documento</button>
+          <div class="row">
+            <div class="col col-sm-12 col-md-12 col-lg-12 col-xl-6">
+              <label class="fields">{{outherFile.field}}</label>
+              <button type="button" class="btn btn-light">{{attachDocument}}</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="col-md-7">
-    <div class="card bg-light ">
-      <div class="card-header">
-       <i class="fa fa-id-card-o"></i>
-        Endereço</div>
-      <div class="card-body">
-        <div class="row">
-          <div class="col-md-4">
-            <label class="fields">CEP</label>
-            <input type="email" class="form-control" aria-describedby="emailHelp">
-          </div>
-          <div class="col-md-4">
-            <label class="fields">Endereço</label>
-            <input type="email" class="form-control" aria-describedby="emailHelp">
-          </div>
-          <div class="col-md-4">
-            <label class="fields">Complemento</label>
-            <input type="email" class="form-control" aria-describedby="emailHelp">
-          </div>
-        </div>
 
-        <div class="row">
-          <div class="col-md-4">
-            <label class="fields">Bairro</label>
-            <input type="email" class="form-control" aria-describedby="emailHelp">
-          </div>
-          <div class="col-md-4">
-            <label class="fields">Estado</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-              <option>Select</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
-          </div>
-          <div class="col-md-4">
-            <label class="fields">Cidade</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-              <option>Select</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
+    <div class="col-md-7">
+      <div class="card bg-light ">
+        <div class="card-header">
+          <i class="fa fa-id-card-o"></i>
+          {{brandEndress}}</div>
+        <div class="card-body card-body-endress">
+          <div class="row">
+            <div *ngFor="let endress of endress" class="col-md-6">
+              <label class="fields">{{endress.name}}</label>
+              <input type="email" class="form-control" aria-describedby="emailHelp">
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
