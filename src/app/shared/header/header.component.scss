@@ -1,0 +1,28 @@
+@import 'config';
+
+.fa-bars {
+  font-size: 25px;
+  margin-top: 6px;
+  color: $color-yellow;
+}
+
+.header__template{
+  width: 102%;
+}
+
+.diagrm {
+  width: 100%;
+}
+
+.dropdown-toggle {
+  color: $color-yellow;
+}
+
+.fa-user .nav-link{
+  color: $color-yellow;
+}
+
+.dropdown-menu {
+  position: absolute;
+  margin-left: -122px;
+}

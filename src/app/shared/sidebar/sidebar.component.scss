@@ -1,0 +1,14 @@
+@import 'config';
+
+.sidebar__template{
+  height: 859px;
+}
+
+.size-button{
+  @extend %default-sidebar;
+}
+
+.no-image{
+  @extend %no-image;
+}
+

@@ -1,0 +1,14 @@
+@import 'config';
+
+.btn-light{
+  border: $color-default-border;
+}
+
+.sem-imagem{
+  width: 90%;
+  height: 20%;
+}
+
+.card-header{
+  @extend %card-header;
+}

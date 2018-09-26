@@ -1,0 +1,13 @@
+@import 'config';
+
+.mt{
+  margin-top: 31px;
+}
+
+.btn-dark{
+  @extend %button-workers-look;
+}
+
+.card-header{
+  @extend %card-header;
+}
