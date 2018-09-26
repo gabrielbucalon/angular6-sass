@@ -24,12 +24,6 @@ $font-roboto: 'Roboto Condensed', sans-serif;
   background-repeat: repeat;
 }
 
-// extends
-%orange-input {
-  color: $color-white;
-  background-color: $color-default;
-}
-
 %button-workers-look {
   background: $color-default;
   color: $color-yellow;
@@ -53,11 +47,6 @@ $font-roboto: 'Roboto Condensed', sans-serif;
   width: 100%;
 }
 
-%tr-table {
-  background-color: $color-gray4;
-  color: $color-white;
-}
-
 //responsive
 $mobile-s: 320px;
 $mobile-m: 375px;
@@ -68,11 +57,7 @@ $laptop-l: 1440px;
 $four-k: 2560px;
 
 @media (max-width: $four-k) {
-  .template-select-status {
-    .side-bar__content {
-      min-height: 1262px;
-    }
-  }
+
 }
 
 @media (max-width: $laptop-l) {
@@ -99,7 +84,7 @@ $four-k: 2560px;
 
 @media (max-width: $laptop) {
   *{
-    font-size: 12px;
+    font-size: 14px;
   }
   .sidebar__template {
     height: 859px;
@@ -123,47 +108,11 @@ $four-k: 2560px;
       height: 30px;
     }
 
-    .btn-default {
-      height: 30px;
-      font-size: 12px;
-    }
-
-    .fa {
-      font-size: 12px;
-    }
-
     .card-header {
       padding: 0px;
       height: 35px;
     }
 
-    h5 {
-      font-size: 14px;
-    }
-  }
-
-  .template-new-edit-status {
-    .card-header {
-      padding: 5px;
-      height: 50px;
-    }
-
-    .input-group {
-      width: 30%;
-    }
-
-    .color-icon-table {
-      margin-top: 0;
-      margin-right: 0;
-    }
-
-    .size-icon_remove {
-      font-size: 18px;
-    }
-
-    .margin-check__initial {
-      margin-top: 30px;
-    }
   }
 }
 
@@ -247,11 +196,7 @@ $four-k: 2560px;
 }
 
 @media (max-width: $mobile-l) {
-  .template-login {
-    .modal-dialog {
-      max-width: 350px;
-    }
-  }
+
 
   .template-select-status {
     .side-bar__content {
@@ -262,39 +207,10 @@ $four-k: 2560px;
       text-align: center;
     }
 
-    .modal-dialog {
-      padding: 5px;
-    }
-
-    .modal-footer {
-      display: flex;
-      justify-content: center;
-    }
-
-    table {
-      overflow: auto;
-    }
-
-    .input-group {
-      width: 100%;
-    }
-
-    .color-logout {
-      background-color: $color-white;
-      color: $color-gray7;
-    }
-
-    .color-op__logout {
-      color: $color-gray7;
-    }
-
     .margin-btn__search {
       margin-top: 4px;
     }
 
-    .dropdown-menu {
-      padding: 10px 10px 0px 10px;
-    }
   }
 
   .template-new-edit-status {
@@ -308,19 +224,6 @@ $four-k: 2560px;
 
     .modal-dialog {
       padding: 5px;
-    }
-
-    .modal-footer {
-      display: flex;
-      justify-content: center;
-    }
-
-    table {
-      overflow: auto;
-    }
-
-    .input-group {
-      width: 50%;
     }
 
     .color-logout {
@@ -348,11 +251,6 @@ $four-k: 2560px;
       width: 410px;
     }
 
-    .margin-div {
-      margin-top: 0;
-      margin-bottom: 5px;
-    }
-
     .table td {
       padding: 4px;
     }
@@ -360,107 +258,9 @@ $four-k: 2560px;
 }
 
 @media (max-width: $mobile-m) {
-  .template-select-status {
-    .modal-dialog {
-      padding: 5px;
-    }
 
-    .modal-footer {
-      display: flex;
-      justify-content: center;
-    }
-
-    table {
-      overflow: auto;
-    }
-
-    .size-button {
-      width: 100%;
-    }
-
-    .input-group {
-      width: 100%;
-    }
-
-    .color-logout {
-      background-color: $color-white;
-      color: $color-gray7;
-    }
-
-    .margin-btn__search {
-      margin-top: 4px;
-    }
-  }
-
-  .template-new-edit-status {
-    .modal-dialog {
-      padding: 5px;
-    }
-
-    .modal-footer {
-      display: flex;
-      justify-content: center;
-    }
-
-    .input-group {
-      width: 100%;
-    }
-
-    .color-logout {
-      background-color: $color-white;
-      color: $color-gray7;
-    }
-
-    .card {
-      width: 360px;
-    }
-
-    .table-content {
-      overflow-x: scroll;
-    }
-  }
 }
 
 @media (max-width: $mobile-s) {
-  .template-select-status {
-    .modal-dialog {
-      padding: 5px;
-    }
 
-    .modal-footer {
-      display: flex;
-      justify-content: center;
-    }
-
-    table {
-      overflow: auto;
-    }
-
-    .size-button {
-      width: 100%;
-    }
-
-    .input-group {
-      width: 100%;
-    }
-
-    .color-logout {
-      background-color: $color-white;
-      color: $color-gray7;
-    }
-
-    .margin-btn__search {
-      margin-top: 0px;
-    }
-  }
-
-  .template-new-edit-status {
-    .table-content {
-      overflow-x: scroll;
-    }
-
-    .card {
-      width: 305px;
-    }
-  }
 }
